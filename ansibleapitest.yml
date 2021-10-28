@@ -9,7 +9,7 @@
       user: admin
       password: ansibleaulab11
       method: POST
-      body: '{ "name" : "192.168.197.129" }'
+      body: '{ "name" : "{{192.168.197.129}}" }'
       force_basic_auth: yes
       status_code: 201
       body_format: son
