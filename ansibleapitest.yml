@@ -1,0 +1,16 @@
+- hosts: localhost
+  tasks:
+  - name: Hello World
+    debug:
+      msg: Hello world
+  - name: Update Ansible Tower inventory
+      uri:
+       url: https://tower.example.com/api/v2/inventories/2/hosts/
+       user: admin
+       password: ansibleaulab11
+       method: POST
+       body: '{ "name" : "192.168.197.129" }'
+       force_basic_auth: yes
+       status_code: 201
+       body_format: son
+       validate_certs: no
