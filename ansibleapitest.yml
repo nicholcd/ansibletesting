@@ -5,7 +5,7 @@
       msg: Hello world
   - name: Update Ansible Tower inventory
     uri:
-      url: https://tower.example.com/api/v2/inventories/2/hosts/
+      url: https://192.168.197.132/api/v2/inventories/2/hosts/
       user: admin
       password: ansibleaulab11
       method: POST
